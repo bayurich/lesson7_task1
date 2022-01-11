@@ -18,7 +18,7 @@ public class TestCalculator {
         int days = 30;
         BigDecimal sumExpectResult = new BigDecimal("23652.97");
 
-        BigDecimal sumCalcResult = calculator.calcMonthPayment(sum, period, rate, days);
+        BigDecimal sumCalcResult = calculator.calcMonthPayment(sum, sum, period, rate, days);
         Assertions.assertTrue(sumExpectResult.compareTo(sumCalcResult) == 0);
     }
 
